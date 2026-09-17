@@ -1,0 +1,11 @@
+[project]
+name = "currency-converter-mcp-server"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastmcp>=4.0.4",
+    "httpx>=0.28.1",
+    "loguru>=0.7.3",
+]
