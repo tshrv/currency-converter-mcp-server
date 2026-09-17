@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Currency Converter MCP Server",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/main.py",
+            "python": "${command:python.interpreterPath}",
+            "console": "integratedTerminal",
+        },
+        {
+            "name": "Currency Converter MCP Server Container",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "docker compose up currency-converter-mcp-server --build",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Test Currency Converter",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/test.py",
+            "python": "${command:python.interpreterPath}",
+            "console": "integratedTerminal",
+        },
+    ]
+}
