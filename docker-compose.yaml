@@ -1,0 +1,12 @@
+services:
+  currency-converter-mcp-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: currency-converter-mcp-server
+
+    ports:
+      - "8001:8001"
+
+    restart: unless-stopped
