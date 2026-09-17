@@ -10,6 +10,6 @@ RUN uv sync --frozen --no-dev
 # Copy application
 COPY src src
 
-EXPOSE 8000
+EXPOSE 8001
 
 CMD ["uv", "run", "--no-dev", "python", "src/main.py"]
