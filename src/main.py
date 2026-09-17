@@ -2,7 +2,7 @@ import httpx
 from fastmcp import FastMCP
 from loguru import logger
 
-mcp = FastMCP("Currency Service")
+mcp = FastMCP("Currency Conversion Service")
 
 
 @mcp.tool
